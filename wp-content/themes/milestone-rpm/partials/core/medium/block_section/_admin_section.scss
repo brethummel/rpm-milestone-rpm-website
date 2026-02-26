@@ -1,0 +1,23 @@
+
+// IMPORTANT: VERSION THE BLOCK IF YOU CHANGE THIS!!!!
+
+.acf-field[data-name="content_blocks"] {
+	.layout[data-layout="block_section"] {
+		.acf-fc-layout-handle {
+			.icon {
+				&:before {
+					background-image: url("partials/core/medium/block_section/icon_section.png") !important;
+				}
+			}
+		}
+		&.section-end {
+			.acf-fc-layout-handle {
+				.icon {
+					&:before {
+						background-image: url("partials/core/medium/block_section/icon_section_close.png") !important;
+					}
+				}
+			}
+		}
+	}
+}

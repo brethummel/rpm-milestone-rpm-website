@@ -1,0 +1,110 @@
+.block-featuredpullquote {
+	&.light {
+		.content-container {
+			.quote-container {
+				.quote {
+					h3 {
+						color: $c-charcoal;
+					}
+				}
+			}
+		}
+	}
+	&.dark {
+		.content-container {
+			.quote-container {
+				.quote {
+					h3 {
+						color: $c-white;
+					}
+				}
+			}
+		}
+	}
+	.content-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		@include media-breakpoint-up(md) {
+			margin-top: 10px;
+		}
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
+		}
+		&.no-logo {
+			align-items: center;
+			.quote-container {
+				.quote {
+					p.attribution {
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+		&.no-person {
+			.quote-container {
+				max-width: unset;
+			}
+		}
+		.image-container {
+			width: 170px;
+			@include media-breakpoint-up(md) {
+				margin-right: 14px;
+			}
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 8px;
+			}
+			.portrait-icon {
+				margin: 20px auto 40px auto;
+				height: 120px;
+				width: 120px;
+				-ms-transform: rotate(-45deg);
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				overflow: hidden;
+				img {
+					position: relative;
+					height: 150%;
+					width: 150%;
+					object-fit: cover;
+					top: -36px;
+					left: -29px;
+					-ms-transform: rotate(45deg);
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+			}
+		}
+		.quote-container {
+			max-width: 400px;
+			text-align: center;
+			.quote {
+				h3 {
+					font-family: $f-baskerville; 
+					font-style: italic;
+					font-weight: $f-regular;
+					font-size: 40px;
+					letter-spacing: .002em;
+					-webkit-font-smoothing: antialiased;
+					font-smoothing: antialiased;
+					font-smooth: always;
+					font-kerning: normal;
+					line-height: 1.1;
+					margin-bottom: 17px;
+					text-transform: none;
+					@include media-breakpoint-down(xs) {
+						font-size: calc(24px + 2.75vw);
+					}
+				}
+			}
+			.logo-container {
+				img {
+					height: 65px;
+					width: auto;
+				}
+			}
+		}
+	}
+}

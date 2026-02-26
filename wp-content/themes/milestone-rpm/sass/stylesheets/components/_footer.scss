@@ -1,0 +1,139 @@
+body {
+	&.offer-checkout { // for Kajabi's checkout page
+
+	}
+}
+footer {
+    .footer-container {
+        .container-xl {
+            padding: 0px;   
+        }
+        .content {
+            background-color: $black;
+            color: $grey;
+			@include media-breakpoint-up(lg) {
+    			height: 100px;
+			}
+			@include media-breakpoint-down(md) {
+				padding: 20px 0px;
+			}
+    		>.container {
+    			height: 100%;
+    			>.row {
+    				height: 100%;
+    			}
+    		}
+            .logo {
+				@include media-breakpoint-down(md) {
+					margin-bottom: 12px;
+				}
+				.logo-block {
+					@include media-breakpoint-up(lg) {
+						width: calc( 100% + 30px );
+						padding: 0px 30px;
+						margin-bottom: 5px;
+					}
+					@include media-breakpoint-down(md) {
+						text-align: center;
+					}
+					img {
+						height: auto;
+						@include media-breakpoint-up(lg) {
+							width: 100%;
+						}
+						@include media-breakpoint-down(md) {
+							width: 200px;
+						}
+					}
+				}
+            }
+            .navigation {
+            	text-align: center;
+				@include media-breakpoint-only(lg) {
+					padding-right: 0px;
+				}
+				@include media-breakpoint-up(lg) {
+					text-align: right;
+				}
+            	.nav-container {
+            		>ul { 
+						list-style: none;
+						margin: 0px 0px 2px 0px;
+						padding: 0px;
+						font-size: 0px;
+            			>li {
+            				display: inline-block;
+            				vertical-align: top;
+							font-size: 16px;
+							margin: 0px 0px 0px 14px;
+							position: relative;
+            				color: $grey;
+							&:before {
+								content: "|";
+								color: $grey;
+								margin-right: 14px;
+							}
+							&:first-child {
+								margin-left: 0px;
+								&:before {
+									content: "";
+									margin-right: 0px;
+								}
+							}
+							a {
+								color: $grey;
+								text-decoration: none;
+								&:hover {
+									color: $c-secondary;
+									text-decoration: underline;
+								}
+							}
+            			}
+            		}
+            	}
+            }
+            .social {
+				@include media-breakpoint-up(lg) {
+            		text-align: right;
+            	}
+				@include media-breakpoint-down(md) {
+					text-align: center;
+					margin-top: 12px;
+				}
+				@include media-breakpoint-down(xs) {
+					margin-bottom: 6px;
+				}
+				ul {
+					list-style: none;
+					margin: 0px;
+					padding: 0px 0px 0px 0px;
+					li {
+						display: inline-block;
+						margin-right: 8px;
+						&:last-child {
+							margin-right: 0px;
+						}
+						a {
+							svg {
+								fill: $grey;
+								transition: all .2s;
+							}
+							&:hover {
+								svg {
+									fill: $c-secondary;
+								}
+							}
+						}
+					}
+				}
+            }
+            .mobile-copyright {
+				text-align: center;
+	            p {
+					font-size: 16px;
+					margin-bottom: 0px;
+	            }
+            }
+        }
+    }
+}

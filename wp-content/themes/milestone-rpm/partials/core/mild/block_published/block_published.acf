@@ -1,0 +1,21 @@
+<?php
+
+$version = '1.1.1'; // IMPORTANT: Update version in both the .acf and .php files, and make a note in CHANGELOG.md!
+spr_register_block_changes('block_published');
+
+/*
+
+Name: Published
+ID: block_published
+Status: private
+Layout ID: mbdmwue8plyvf
+Subfield ID: mbdmwue8plyvg
+Group ID: mbdmwue8plyv
+
+*/
+
+if( function_exists('acf_add_local_field_group') ):
+
+endif;
+
+?>
